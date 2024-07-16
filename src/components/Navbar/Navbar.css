@@ -10,9 +10,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-    margin-left : 100px;
-    margin-top : 30px;
-    animation: slideDown 0.7s;
+    animation: slideDown 1s;
 }
 .nav_content a{
     text-decoration: none;
@@ -23,10 +21,26 @@
     display : flex;
     position :relative;
     background: transparent;
+    align-items : center;
+    justify-content: space-evenly;
+    height : 125px;
 }
 .Navbar img{
     width : 150px;
     animation: fade-In 1s;
+}
+.Navbar button{
+    width : 150px;
+    height : 55px;
+    padding : 10px 20px;
+    border-radius : 20px;
+    border : none;
+    font-weight : bold;
+    font-size : 15px;
+    background-color: rgb(102, 35, 164);
+    color : white;
+    cursor : pointer;
+    animation : fade-In 1s;
 }
 @keyframes slideDown{
     from{

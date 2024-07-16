@@ -7,11 +7,15 @@ const Navbar = () => {
     <div className = 'Navbar'>
       <Link to = '/'><img className = 'image' src = {images['logo.png']} alt = ''/></Link>
       <div className = 'nav_content'>
-        <a href = '/home' style = {{textDecoration : 'none'}}>Home</a>
-        <a href  = '/about' style = {{textDecoration : 'none'}}>About Us</a>
-        <a href = '/events' style = {{textDecoration : 'none'}}>Events</a>
-        <a href = '/partners' style = {{textDecoration : 'none'}}>Partners</a>
+        <a href = '/home'>Home</a>
+        <a href  = '/about'>About Us</a>
+        <a href = '/venue'>Venue</a>
+        <a href = '/events'>Events</a>
+        <a href = '/contact'>Speakers</a>
+        <a href = '/partners'>Partners</a>
       </div>
+      <a href = '/contact'>
+      <button>Contact Us</button></a>
     </div>
   )
 }
