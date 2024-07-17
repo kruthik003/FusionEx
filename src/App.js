@@ -1,13 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import {BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar'
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <Navbar/>
-    </Router>
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
   );
 }
 
