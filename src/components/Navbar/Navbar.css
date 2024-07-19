@@ -4,7 +4,7 @@
     height : 70px;
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: black;
+    border: 2px solid grey;
     border-radius : 25px;
     z-index : 1000;
     justify-content: space-around;
@@ -19,11 +19,13 @@
 }
 .Navbar{
     display : flex;
-    position :relative;
+    position :fixed;
     background: transparent;
     align-items : center;
     justify-content: space-evenly;
     height : 125px;
+    width: 100%;
+    z-index: 1000;
 }
 .Navbar img{
     width : 150px;
