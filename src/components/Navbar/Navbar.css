@@ -4,11 +4,19 @@
     height : 70px;
     backdrop-filter:blur(10px);
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-backdrop-filter: blur(10px);
     border: 2px solid grey;
 =======
     border: 2px solid rgba(255, 255, 255, 0.25);
 >>>>>>> ddf927a (Intial Commit)
+=======
+    border: 2px solid rgba(255, 255, 255, 0.25);
+=======
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid grey;
+>>>>>>> b61b6229e40e4de89bea9877709bf05d0140989b
+>>>>>>> e83e42f (Initial commit)
     border-radius : 25px;
     z-index : 1000;
     justify-content: space-around;
@@ -29,6 +37,7 @@
     justify-content: space-evenly;
     height : 125px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 100%;
     z-index: 1000;
 =======
@@ -36,6 +45,15 @@
     position: fixed;
     z-index : 1000;
 >>>>>>> ddf927a (Intial Commit)
+=======
+    width : 100%;
+    position: fixed;
+    z-index : 1000;
+=======
+    width: 100%;
+    z-index: 1000;
+>>>>>>> b61b6229e40e4de89bea9877709bf05d0140989b
+>>>>>>> e83e42f (Initial commit)
 }
 .Navbar img{
     width : 150px;
