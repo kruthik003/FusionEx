@@ -7,7 +7,7 @@ function importAll(r) {
   }
   
   // Include .webp in the regex pattern
-  const images = importAll(require.context('./components/Images', false, /\.(png|jpe?g|svg|webp)$/));
+  const images = importAll(require.context('./assets/images', false, /\.(png|jpe?g|svg|webp|jpg|JPG)$/));
   
   export default images;
   
