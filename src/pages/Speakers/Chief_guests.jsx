@@ -2,7 +2,7 @@ import React from 'react'
 import './Chief_guests.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import images from '../../Image';
-import { faInstagram, faTwitter, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 const Speakers = () => {
   return (
     <div className = 'chief_guests'>
