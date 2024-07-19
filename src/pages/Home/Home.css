@@ -45,6 +45,7 @@
     box-sizing: border-box;
     width: 100%;
     z-index:1;
+    padding-top: 125px; 
   }
   
   .title {
@@ -97,11 +98,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
   }
-
-    .content-container {
-      display: flex;
-      align-items: flex-start;
-    }
     
     .event-image {
       width: 200px; 
