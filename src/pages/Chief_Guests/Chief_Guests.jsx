@@ -23,7 +23,7 @@ const Chief_Guests = () => {
   return (
     <div className = 'chief_guests'>
       <div className = 'head'>
-        Speakers
+        Chief Guests
       </div>
       <div className = 'guests'>
         <div className = 'guest_row' style = {{opacity : opacity}}>
