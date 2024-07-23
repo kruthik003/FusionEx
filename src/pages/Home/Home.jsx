@@ -1,23 +1,43 @@
 import React from 'react'
 import './Home.css'
 import Homeimg from "../../assets/images/Homeimg.png"
+import {useEffect,useState} from "react"
 // import EventCard from '../../components/EventCard/EventCard'
 const Home = () =>{
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY > window.scrollX ? window.scrollY : window.scrollX);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const maxScroll = 900; // Adjust this value for where the fade should start and end
+  const opacity = Math.max(0, Math.min(1, 1 - Math.abs((scrollPosition - 600) / 600)));
+
   return (
     <div className = 'home'>
+      <div className = 'event_name'>
       <div className = 'title'>
         Fusion<span>Ex</span>
       </div>
-      <div className = 'moto'>
+      <div className = 'motto'>
         Immerse, Innovate, Inspire
       </div>
+      </div>
       <div className = 'desc'>
-        <div>
-          <h1 className = 'content-1'>
-          Welcome to FusionEx - Where Innovation meets Excitement!
-          </h1>
-            <img src={Homeimg} alt="Events" className="event-image" /> 
-            <p className = 'content-2'>
+          <div className = 'content-1'
+          style = {{transform : `translateX(calc(${scrollPosition*0.3}px))`,
+                    transistion : `transform 0.5s ease`,
+                    opacity : opacity,}}>
+          <h1>Welcome to FusionEx - Where Innovation meets Excitement!</h1>
+            <p>
             Join us for two exhilarating days packed with cutting-edge workshops, inspiring seminars, dynamic panel 
             discussions, and a showcase of groundbreaking projects at our Project Expo. This premier event brings 
             together tech enthusiasts, industry experts, and creative minds for an unforgettable experience. 
@@ -28,7 +48,10 @@ const Home = () =>{
             Mark your calendars and get ready for an unforgettable experience at 
             FusionEx — where ideas come to life and connections are made!
             </p>
-        </div>
+          </div>
+          <div className = 'event_img' style={{transform : `translateX(calc(-${scrollPosition*0.2}px))`,opacity :opacity,}}>
+          <img src={Homeimg} alt="Events"/> 
+          </div>
       </div>
     </div>
   )

@@ -39,8 +39,7 @@
     flex-direction: column;
     background-color: black;
     /* height: calc(100vh - 125px); */
-    height: 100vh;
-    align-items: center;
+    height: fit-content;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
@@ -48,6 +47,13 @@
     padding-top: 125px; 
   }
   
+  .event_name{
+    display : flex;
+    flex-direction: column;
+    height : 80vh;
+    justify-content : center;
+    align-items: center;
+  }
   .title {
     width: 100%;
     font-size: 150px;
@@ -68,7 +74,7 @@
     -webkit-text-fill-color: transparent;
   }
   
-  .moto {
+  .motto {
     /* width: 100%; */
     color: white;
     font-size: 55px;
@@ -77,37 +83,32 @@
     -webkit-text-fill-color: transparent; */
     animation: fade-dark 5s ease forwards;
   }
-  
-  .desc,
-  .content-1,
-  .content-2 {
-    color: white;
-    width: 100%; 
+  .desc{
+    display : flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  .content-1{
     text-align: left;
+    display : flex;
+    flex-direction: column;
+    color: white;
+    width: 700px;
     padding: 16px; 
     font-size: 20px;
     max-width: 100%;
-    animation: slide-in 5s ease forwards ;
+    animation : fade-dark 1s ease-in;
+    margin-bottom : 0;
 }
- 
-  
-  .content-1 {
-    margin-bottom: 0; 
-    font-size: 25px;
-    /* background: linear-gradient(to left, #bf00ff 70%, #273be2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-  }
+
+
     
-    .event-image {
-      width: 200px; 
-      margin-left: 16px;
+    .event_img {
+      width: 300px; 
       float: right;
-      height: 200px;
-      animation: slide-in 5s ease forwards;
+      margin-top : 100px;
+    }
+    .event_img img{
+      width : 100%;
     }
     
-    .content-2 {
-      flex: 1;
-      margin-top: 0;
-    }
