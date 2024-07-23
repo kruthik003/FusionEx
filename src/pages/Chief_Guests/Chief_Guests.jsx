@@ -22,7 +22,7 @@ const Chief_Guests = () => {
   const opacity = Math.min(1,scrollPosition/300);
   return (
     <div className = 'chief_guests'>
-      <div className = 'head'>
+      <div className = {`head ${scrollPosition ? 'scrolled' : ''}`}>
         Chief Guests
       </div>
       <div className = 'guests'>

@@ -14,8 +14,17 @@
     font-weight : bold;
     animation : fadeIn 1s;
     text-align: center;
-
+    position : relative;
+    transform-origin : top left;
+    transition : transform 0.7s ease-in-out;
 }
+.head.scrolled{
+    transform : scale(0.7);
+    top : 100px;
+    left : 80px;
+    text-align: none;
+}
+
 .guests{
     padding :40px;
     display : flex;
