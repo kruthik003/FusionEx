@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 3rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/564x/0d/a2/cf/0da2cfb4689885fe22bc85d95dfdfada.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.45;
+  z-index: 1;
+  position: absolute;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+  z-index: 2;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.guest1,
+.guest2 {
+  background-color: #1e1e1e;
+  width: 30%;
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.guest1 > img,
+.guest2 > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.guest2 {
+  flex-direction: column-reverse;
+  margin-top: 5rem;
+}
